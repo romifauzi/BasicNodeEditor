@@ -4,4 +4,4 @@ Boilerplate for creating custom tools with Node editing.
 
 This is a boilerplate script for creating custom tools in Unity with node editing visual style,
 based on tutorial by gram games: https://gram.gs/gramlog/creating-node-based-editor-unity/
-added serialization support (nodes setup can be saved into a file). Feel free to use it
+added serialization support (nodes setup can be saved into a file).<br>Feel free to use it
