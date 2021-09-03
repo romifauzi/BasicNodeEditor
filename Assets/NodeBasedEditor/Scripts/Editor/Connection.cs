@@ -1,0 +1,37 @@
+using System;
+using UnityEditor;
+using UnityEngine;
+
+public class Connection
+{
+    public ConnectionClass connection;
+    public ConnectionPoint inPoint;
+    public ConnectionPoint outPoint;
+    public Action<ConnectionClass> OnClickRemoveConnection;
+
+    public Connection(ConnectionClass connection, ConnectionPoint inPoint, ConnectionPoint outPoint, Action<ConnectionClass> OnClickRemoveConnection)
+    {
+        this.inPoint = inPoint;
+        this.outPoint = outPoint;
+        this.OnClickRemoveConnection = OnClickRemoveConnection;
+        this.connection = connection;
+    }
+
+    public void Draw()
+    {
+        Handles.DrawBezier(
+            inPoint.rect.center,
+            outPoint.rect.center,
+            inPoint.rect.center + Vector2.left * 50f,
+            outPoint.rect.center - Vector2.left * 50f,
+            Color.white,
+            null,
+            2f
+        );
+
+        if (Handles.Button((inPoint.rect.center + outPoint.rect.center) * 0.5f, Quaternion.identity, 4, 8, Handles.RectangleHandleCap))
+        {
+            OnClickRemoveConnection?.Invoke(connection);
+        }
+    }
+}

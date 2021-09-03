@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd7989b25f580f4a872ed852fbce32e, type: 3}
+  m_Name: NodeData 2
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: ad49da9e-1941-4fae-9dbb-19da6b63f5af
+    rect:
+      serializedVersion: 2
+      x: 6.699997
+      y: 143
+      width: 200
+      height: 150
+    title: 
+    isDragged: 0
+    isSelected: 1
+    inPointId: 3897a778-6b16-483c-a36d-a47ca0d3e465
+    outPointId:
+    - d6c2db27-beef-4902-b97d-f79cb3b7c128
+    - ef8e3ff4-f740-4423-8559-e31404468b2c
+    - d7a32e6e-f769-4fcd-9a65-0aeeb528e21c
+  - id: 4a990002-59e9-487d-80ed-2069dac97104
+    rect:
+      serializedVersion: 2
+      x: 293.7
+      y: 64
+      width: 200
+      height: 50
+    title: 
+    isDragged: 0
+    isSelected: 0
+    inPointId: b25e6c08-4e76-4e12-b50d-cb4af445e0c3
+    outPointId:
+    - 436c01d7-f2da-47a2-a0e7-59ecf84f2916
+  - id: c78db3e9-78df-4363-8ff9-f2b670901b5f
+    rect:
+      serializedVersion: 2
+      x: 297.7
+      y: 337
+      width: 200
+      height: 50
+    title: 
+    isDragged: 0
+    isSelected: 0
+    inPointId: 31539421-3758-4283-9755-51a468300daf
+    outPointId:
+    - 2323149d-3fde-457c-b7cb-0b6d81ec232e
+  connections:
+  - nodeInGuid: b25e6c08-4e76-4e12-b50d-cb4af445e0c3
+    nodeOutGuid: d6c2db27-beef-4902-b97d-f79cb3b7c128
+  - nodeInGuid: 31539421-3758-4283-9755-51a468300daf
+    nodeOutGuid: ef8e3ff4-f740-4423-8559-e31404468b2c
